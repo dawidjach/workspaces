@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farbe eines Paragraphen ändern</title>
+</head>
+<body>
+    <p id="name">Max Mustermann</p>
+    <button id="change-color-button" type="button">Farbe ändern</button>
+
+    <script>
+        // suche das Element mit ID "name" im Dokument und speichere eine Referenz in Variable 'nameParagraph'
+        const nameParagraph = document.getElementById("name");
+        const changeColorButton = document.getElementById("change-color-button");
+        // registriere eine Ereignisbehandlungsroutine für das Ereignis "click" welches beim Klicken auf einen Button ausgelöst wird.
+        // Hinweis: die Ereignisbehandlungsroutine ist hier eine Arrow-Funktion
+        changeColorButton.addEventListener("click", ()=> {
+            // wandle den Text des Paragraphen in Großbuchstaben um
+            nameParagraph.innerText = nameParagraph.innerText.toUpperCase();
+            // setze die Vordergrundfarbe auf rot.
+            nameParagraph.style.color = "red";
+        });
+
+        nameParagraph.addEventListener("click", ()=>{
+            // in CSS: background-color (kebab-case)
+            // in JS: backgroundColor (camelCase Notation)
+            nameParagraph.style.backgroundColor = "#ccc";
+            nameParagraph.style.color = "#333";
+        });
+    </script>
+</body>
+</html>
