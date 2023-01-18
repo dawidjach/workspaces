@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.ChromeDebuggingAttachment": false
+    "liveServer.settings.ChromeDebuggingAttachment": true,
+    "liveServer.settings.CustomBrowser": "chrome"
 }

@@ -4,20 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "firefox",
-            "request": "attach",
-            "name": "Attach to Firefox",
-            "pathMappings": [
-                {
-                    "url": "http://127.0.0.1:5500",
-                    "path": "${workspaceFolder}"
-                },
-                {
-                    "url": "http://127.0.0.1:5500",
-                    "path": "${workspaceFolder}"
-                }
-            ]
+            "request": "Attach to Firefox",
+            "name": "Attach"
         },
         {
             "name": "Attach to Chrome",

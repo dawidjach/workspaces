@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlen addieren</title>
+</head>
+<body>
+    <script>
+        // Variable verwenden:
+        // mit 'let' kann man eine neue Variable definieren.
+        // der Zuweisungsoperator '=' weist einer Variablen einen Wert zu.
+        // auf der linken Seite des Zuweisungsoperators steht eine Variable und auf der rechten Seite der zuzuweisende Wert.
+        let firstNumber = Number (prompt("Bitte gib erste Zahl ein: "));    // die Funktion 'Number' wandelt string zu int
+        firstNumber = Number(firstNumber);
+        let secondNumber = Number (prompt("Bitte gib zweite Zahl ein: "));
+        alert(firstNumber + secondNumber);  // z.B. 1015 weil string + string, deswegen braucht man die Funktion 'Number'
+    </script>
+
+    <script>
+        let firstName = prompt("Bitte gib dein Vorname: ");
+        let lastName = prompt("Bitte gib dein Nachname: ");
+        alert(firstName + " " + lastName);
+        // oder: aler('Dein Name: ${lastname}, ${firstName}');
+    </script>
+
+</body>
+</html>
